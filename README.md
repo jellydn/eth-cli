@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 [![Twitter: jellydn](https://img.shields.io/twitter/follow/jellydn.svg?style=social)](https://twitter.com/jellydn)
 
-> How to use dapptools with ganache
+> How to use dapptools like a PRO
 
 ## Install
 
@@ -22,7 +22,13 @@ npm install ganache --global
 ## Usage
 
 ```sh
+# Start ganache
 ganache -m "surprise frog enforce steel angle boy engine journey kind meat loop stomach"
+
+# Get all accounts, we could import with `ethsign import`
+seth accounts
+
+# Check balance
 seth balance 0x6a442De9B3deB2f3bA56D8DD86529d6bBe6542B1
 ```
 
@@ -32,6 +38,8 @@ seth balance 0x6a442De9B3deB2f3bA56D8DD86529d6bBe6542B1
 - [dapptools](https://github.com/dapphub/dapptools)
 - [ganache](https://github.com/trufflesuite/ganache)
 - [foundry](https://github.com/foundry-rs/foundry)
+- [direnv](https://direnv.net/)
+- [fnm](https://github.com/Schniz/fnm)
 
 ## Author
 
