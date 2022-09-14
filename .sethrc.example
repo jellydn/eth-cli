@@ -1,0 +1,5 @@
+# Use ganache testnet node for all RPC calls
+export ETH_RPC_URL=http://localhost:8545
+
+# Set an address as the default sender
+export ETH_FROM=0xd08f67044c53d723686e002c5b880f73674e164c
