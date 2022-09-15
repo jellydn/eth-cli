@@ -12,11 +12,22 @@ contract EthReplTest is DSTest {
         repl = new EthRepl();
     }
 
-    function testFail_basic_sanity() public {
-        assertTrue(false);
+    function test_withdraw() public {
+        payable(address(repl)).transfer(1 ether);
+        uint256 preBalance = address(this).balance;
+        repl.withdraw(42);
+        uint256 postBalance = address(this).balance;
+        assertEq(preBalance + 1 ether, postBalance);
     }
 
-    function test_basic_sanity() public {
-        assertTrue(true);
+    function testFail_withdraw_wrong_pass() public {
+        payable(address(repl)).transfer(1 ether);
+        uint256 preBalance = address(this).balance;
+        repl.withdraw(1);
+        uint256 postBalance = address(this).balance;
+        assertEq(preBalance + 1 ether, postBalance);
     }
+
+    // allow sending eth to the test contract
+    receive() external payable {}
 }
