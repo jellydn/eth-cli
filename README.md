@@ -29,19 +29,27 @@ npm install ganache --global
 
 ## Usage
 
-Create .envrc file base on .envrc.example
+Create .envrc file base on .envrc.example. Then, run below for checkout/update all git submodules:
+
+```sh
+make update
+```
 
 ### Run testnet
 
 ```sh
 # Start ganache
-ganache-cli -m "surprise frog enforce steel angle boy engine journey kind meat loop stomach" --gasLimit 7984363
-
+make ganache
 # Get all accounts, we could import with `ethsign import`
 seth accounts
-
 # Check balance
 seth balance 0x6a442De9B3deB2f3bA56D8DD86529d6bBe6542B1
+```
+
+### Deploy to testnet
+
+```sh
+make deploy
 ```
 
 ### Cast
@@ -56,6 +64,12 @@ cast send $SC_COUNTER_ADDR "setCounter(uint256)" 1 --legacy
 ```sh
 seth call $SC_COUNTER_ADDR "getCounter()(uint256)"
 seth send $SC_COUNTER_ADDR "setCounter(uint256)" 2
+```
+
+## Test
+
+```sh
+make test
 ```
 
 ## Useful references
