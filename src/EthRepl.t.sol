@@ -28,6 +28,16 @@ contract EthReplTest is DSTest {
         assertEq(preBalance + 1 ether, postBalance);
     }
 
+    function test_set_counter() public {
+        assertEq(repl.getCounter(), 0);
+    }
+
+    function test_get_counter() public {
+        assertEq(repl.getCounter(), 0);
+        repl.setCounter(42);
+        assertEq(repl.getCounter(), 42);
+    }
+
     // allow sending eth to the test contract
     receive() external payable {}
 }

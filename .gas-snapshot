@@ -1,2 +1,4 @@
-testFail_withdraw_wrong_pass() (gas: 8707)
-test_withdraw() (gas: 15682)
+testFail_withdraw_wrong_pass() (gas: 8730)
+test_get_counter() (gas: 26021)
+test_withdraw() (gas: 15660)
+test_set_counter() (gas: 3493)
