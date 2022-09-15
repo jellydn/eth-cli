@@ -3,13 +3,13 @@ pragma solidity ^0.8.6;
 
 import "ds-test/test.sol";
 
-import "./EthRepl.sol";
+import "./SimpleCounter.sol";
 
-contract EthReplTest is DSTest {
-    EthRepl repl;
+contract SimpleCounterTest is DSTest {
+    SimpleCounter repl;
 
     function setUp() public {
-        repl = new EthRepl();
+        repl = new SimpleCounter();
     }
 
     function test_withdraw() public {
