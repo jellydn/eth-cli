@@ -1,9 +1,9 @@
-# Welcome to eth-repl 👋
+# Welcome to eth-cli 👋
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 [![Twitter: jellydn](https://img.shields.io/twitter/follow/jellydn.svg?style=social)](https://twitter.com/jellydn)
 
-> How to test smart contract in REPL like a PRO
+> How to test smart contract in CLI like a PRO
 
 ## Install dapptools
 
