@@ -5,6 +5,8 @@
 
 > How to test smart contract in CLI like a PRO
 
+[![ITMan - Tip #25 - Command line tools for smart contract like a PRO [Vietnamese]](https://i.ytimg.com/vi/eGJMubePnws/hqdefault.jpg)](https://www.youtube.com/watch?v=eGJMubePnws)
+
 ## Install dapptools
 
 Install [Nix](https://nixos.org/download.html) if you haven't already. Then install dapptools:
